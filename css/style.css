@@ -1,8 +1,8 @@
 body.landing-page {
     margin: 0;
     padding: 0;
-    background-color: #000;
-    color: white;
+    background-color: #000;       /* 黑色背景 */
+    color: #fff;                  /* 白色文字 */
     height: 100vh;
     font-family: "Helvetica Neue", sans-serif;
     display: flex;
@@ -16,13 +16,13 @@ body.landing-page {
   
   .main-title {
     font-size: 72px;
-    color: gold;
+    color: white;                 /* 白色主标题 */
     margin: 0;
   }
   
   .subtitle {
     font-size: 36px;
-    color: #ccc;
+    color: #aaa;                  /* 灰白副标题 */
     margin-top: 10px;
   }
   
@@ -30,15 +30,15 @@ body.landing-page {
     display: inline-block;
     margin-top: 40px;
     padding: 12px 24px;
-    border: 1px solid gold;
-    color: gold;
+    border: 1px solid white;
+    color: white;
     text-decoration: none;
     font-size: 18px;
     transition: all 0.3s ease;
   }
   
   .cta-button:hover {
-    background-color: gold;
+    background-color: white;
     color: black;
   }
   
