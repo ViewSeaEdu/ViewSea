@@ -1,0 +1,44 @@
+body.landing-page {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: white;
+    height: 100vh;
+    font-family: "Helvetica Neue", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .centered-content {
+    text-align: center;
+  }
+  
+  .main-title {
+    font-size: 72px;
+    color: gold;
+    margin: 0;
+  }
+  
+  .subtitle {
+    font-size: 36px;
+    color: #ccc;
+    margin-top: 10px;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 12px 24px;
+    border: 1px solid gold;
+    color: gold;
+    text-decoration: none;
+    font-size: 18px;
+    transition: all 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: gold;
+    color: black;
+  }
+  
