@@ -1,44 +1,71 @@
 body.landing-page {
-    margin: 0;
-    padding: 0;
-    background-color: #000;       /* 黑色背景 */
-    color: #fff;                  /* 白色文字 */
-    height: 100vh;
-    font-family: "Helvetica Neue", sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+              url('../assets/star-bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  height: 100vh;
+  font-family: "Helvetica Neue", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.centered-content {
+  text-align: center;
+  transform: translateY(-5%);
+}
+
+.main-title {
+  font-size: 72px;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 36px;
+  margin-top: 10px;
+  color: #aaa;
+}
+
+.quote {
+  font-size: 18px;
+  margin-top: 40px;
+  font-style: italic;
+  color: #888;
+}
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+}
+
+/* 动画定义 */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 1.2s ease-out forwards;
+}
+
+.delay-1 {
+  animation-delay: 0.8s;
+}
+.delay-2 {
+  animation-delay: 1.6s;
+}
+.delay-3 {
+  animation-delay: 2.4s;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  .centered-content {
-    text-align: center;
-  }
-  
-  .main-title {
-    font-size: 72px;
-    color: white;                 /* 白色主标题 */
-    margin: 0;
-  }
-  
-  .subtitle {
-    font-size: 36px;
-    color: #aaa;                  /* 灰白副标题 */
-    margin-top: 10px;
-  }
-  
-  .cta-button {
-    display: inline-block;
-    margin-top: 40px;
-    padding: 12px 24px;
-    border: 1px solid white;
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    transition: all 0.3s ease;
-  }
-  
-  .cta-button:hover {
-    background-color: white;
-    color: black;
-  }
-  
+}
