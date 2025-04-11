@@ -11,17 +11,25 @@
     <h2 class="subtitle fade-in delay-1">ViewSea</h2>
     <p class="quote fade-in delay-2">"The world is not given to you. You have to go and see it." — Murakami</p>
   </div>
-  <div class="scroll-indicator fade-in delay-3">
-    <span>Scroll to Begin ↓</span>
+
+  <div class="scroll-spacer"></div>
+
+  <div class="scroll-indicator fade-in delay-3 twinkle">
+    Scroll to Begin ↓
   </div>
+
+  <script>
+    let switched = false;
+    window.addEventListener('scroll', function () {
+      if (!switched && window.scrollY + window.innerHeight >= document.body.scrollHeight - 10) {
+        switched = true;
+        setTimeout(() => {
+          window.location.href = 'mentors.html';
+        }, 300);
+      }
+    });
+  </script>
 </body>
 
-<script>
-  // 页面滑动到底部自动跳转到 mentors.html
-  window.addEventListener('scroll', function() {
-    if (window.scrollY + window.innerHeight >= document.body.scrollHeight) {
-      window.location.href = 'mentors.html';
-    }
-  });
-</script>
+
 </html>

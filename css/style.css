@@ -69,3 +69,53 @@ body.landing-page {
     transform: translateY(0);
   }
 }
+
+
+body.mentors-page {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+  font-family: "Helvetica Neue", sans-serif;
+  min-height: 100vh;
+}
+
+.mentor-container {
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.mentor-title {
+  font-size: 48px;
+  margin-bottom: 40px;
+}
+
+
+/* 延长页面高度，允许滚动 */
+.scroll-spacer {
+  height: 100px; /* 可根据需要微调 */
+}
+
+/* 更亮、更大的底部提示文字 */
+.scroll-indicator {
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+  opacity: 0.8;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+/* 闪烁动画效果：像星星一样 */
+@keyframes twinkle {
+  0%, 100% { opacity: 0.9; }
+  50% { opacity: 0.3; }
+}
+
+.twinkle {
+  animation: twinkle 1.6s infinite ease-in-out;
+}
+
